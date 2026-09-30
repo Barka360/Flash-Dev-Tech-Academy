@@ -1,0 +1,1 @@
+'use client';import {createClient} from '@/lib/supabase';import {useRouter} from 'next/navigation';export default function SignOut(){const r=useRouter();return <button className="text-sm text-slate-400" onClick={async()=>{await createClient().auth.signOut();r.push('/')}}>Sign out</button>}
