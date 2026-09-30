@@ -1,0 +1,1 @@
+export type Track={id:string;slug:string;name:string;description:string};export type Course={id:string;slug:string;title:string;description:string;level:string;estimated_hours:number};
