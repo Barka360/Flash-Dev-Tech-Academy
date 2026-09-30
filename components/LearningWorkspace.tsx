@@ -20,8 +20,8 @@ export default function LearningWorkspace({ lesson }: { lesson: any }) {
   const preview = useMemo(
     () =>
       `<!doctype html><html><head><style>${css}</style></head><body>${html}<script>${js.replace(
-        /<\\/script/gi,
-        '<\\\\/script'
+        /<\/script/gi,
+        '<\\/script'
       )}</script></body></html>`,
     [html, css, js]
   );
